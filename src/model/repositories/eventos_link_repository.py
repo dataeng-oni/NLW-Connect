@@ -29,7 +29,7 @@ class EventosLinkRepository(EventosLinkRepositoryInterface):
                 .query(EventosLink)
                 .filter(
                     EventosLink.evento_id == event_id,
-                    EventosLink.subscriber_id == subscriber_id
+                    EventosLink.inscrito_id == subscriber_id
                     )
                 .one_or_none()
             )

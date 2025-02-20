@@ -1,7 +1,7 @@
 from flask import Blueprint, jsonify, request
 
 
-event_route_bp = Blueprint("event_route0", __name__)
+event_route_bp = Blueprint("event_route", __name__)
 
 from src.validators.events_creator_validator import events_creator_validator
 
